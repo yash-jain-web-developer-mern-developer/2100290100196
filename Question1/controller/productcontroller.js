@@ -10,6 +10,8 @@ const categories = ["Phone", "Computer", "TV", "Earphone", "Tablet", "Charger", 
 // Test Server Base URL
 const testServerBaseUrl = 'http://20.244.56.144/test';
 // Utility function to fetch data from a company
+
+
 const fetchCompanyData = async (company, category, minPrice, maxPrice, top) => {
     try {
         const url = `${testServerBaseUrl}/companies/${company}/categories/${category}/products?top=${top}&minPrice=${minPrice}&maxPrice=${maxPrice}`;
